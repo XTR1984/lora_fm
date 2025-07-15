@@ -1,10 +1,10 @@
-#Play and Listen FM via Lora (sx127x) transceiver#
+# Play and Listen FM via Lora (sx127x) transceiver 
 
-#Прослушивание и вещание в модуляции FM через Lora-трансивер (sx1276/sx1278) и Serial-порт.#
+# Прослушивание и вещание в модуляции FM через Lora-трансивер (sx1276/sx1278) и Serial-порт.
 
 Зависимости: pyserial
 
-##Использование:##
+# Использование:
 
 RX:
 
