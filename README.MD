@@ -1,10 +1,13 @@
-# Play and Listen FM via Lora (sx127x) transceiver 
+## Play and Listen FM via Lora (sx127x) transceiver 
 
-# Прослушивание и вещание в модуляции FM через Lora-трансивер (sx1276/sx1278) и Serial-порт.
+## Прослушивание и вещание в модуляции FM через Lora-трансивер (sx1276/sx1278) и Serial-порт.
 
 Зависимости: pyserial
 
-# Использование:
+### Использование:
+
+Подправить pins.h и platformio.ini  для своей платы, собрать и залить прошивку.
+Использовать lorafm.py для приема и передачи  
 
 RX:
 
@@ -24,6 +27,7 @@ sox count.wav -t raw -b8 -e signed-integer -c 1 -r 8000 - |  python3 lorafm.py -
 
 Примечания:
 - Serial через USBCDC (на esp32s2) не вывозит rate 48000гц, нужно пробовать hardware uart 
+- Для аппаратного serial видимо нужно убрать строчку   Serial.setRxBufferSize(BUFFERSIZE);
 - Есть баги в буферизации 
 
 
